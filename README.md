@@ -23,19 +23,19 @@
 
 ## Disclaimer
 
-I wrote this script for myself. I'm not responsible, if you damage something using my script.
+I cloned this script from https://github.com/mr-manuel/venus-os_dbus-mqtt-pv and modified it for my needs. I'm not responsible, if you damage something using my script.
 
 
 ## Supporting/Sponsoring this project
 
-You like the project and you want to support me?
+You like the original project and you want to sopport Mr. Manuel?
 
 [<img src="https://github.md0.eu/uploads/donate-button.svg" height="50">](https://www.paypal.com/donate/?hosted_button_id=3NEVZBDM5KABW)
 
 
 ## Purpose
 
-The script emulates a Photovoltaic AC Inverter in Venus OS. It gets the MQTT data from a subscribed topic and publishes the information on the dbus as the service `com.victronenergy.pvinverter.mqtt_pv` with the VRM instance `51`.
+The script emulates a Photovoltaic AC Inverter in Venus OS. It gets the MQTT data from a subscribed topic and publishes the information on the dbus as the service `com.victronenergy.pvinverter.mqtt_pv` with the VRM instance `51`. This special fork was modified for my Growatt MIC2000 PV inverters.
 
 
 ## Config
@@ -46,8 +46,6 @@ Copy or rename the `config.sample.ini` to `config.ini` in the `dbus-mqtt-pv` fol
 ## JSON structure
 
 ### Generic device
-
-<details><summary>Minimum required</summary>
 
 ```json
 {
